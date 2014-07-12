@@ -1,11 +1,13 @@
-goconfig [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Unknwon/goconfig/trend.png)](https://bitdeli.com/free "Bitdeli Badge") [![Build Status](https://drone.io/github.com/Unknwon/goconfig/status.png)](https://drone.io/github.com/Unknwon/goconfig/latest) [![Go Walker](http://gowalker.org/api/v1/badge)](http://gowalker.org/github.com/Unknwon/goconfig) 
+goconfig [![Build Status](https://drone.io/github.com/Unknwon/goconfig/status.png)](https://drone.io/github.com/Unknwon/goconfig/latest) [![Go Walker](http://gowalker.org/api/v1/badge)](http://gowalker.org/github.com/Unknwon/goconfig) 
 ========
 
 [中文文档](README_ZH.md)
 
+Code Convention: based on [Go Code Convention](https://github.com/Unknwon/go-code-convention).
+
 ## About
 
-goconfig is a easy-use, comments-support configuration file parser for the Go Programming Language, which provides a structure similar to what you would find on Microsoft Windows INI files.
+Package goconfig is a easy-use, comments-support configuration file parser for the Go Programming Language, which provides a structure similar to what you would find on Microsoft Windows INI files.
 
 The configuration file consists of sections, led by a `[section]` header and followed by `name:value` or `name=value` entries. Note that leading whitespace is removed from values. The optional values can contain format strings which refer to other values in the same section, or values in a special DEFAULT section. Comments are indicated by ";" or "#"; comments may begin anywhere on a single line.
 	
@@ -89,3 +91,7 @@ Or
 - [goconf](http://code.google.com/p/goconf/)
 - [robfig/config](https://github.com/robfig/config)
 - [Delete an item from a slice](https://groups.google.com/forum/?fromgroups=#!topic/golang-nuts/lYz8ftASMQ0)
+
+## License
+
+This project is under Apache v2 License. See the [LICENSE](LICENSE) file for the full license text.

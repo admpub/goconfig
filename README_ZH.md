@@ -1,11 +1,13 @@
-goconfig [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Unknwon/goconfig/trend.png)](https://bitdeli.com/free "Bitdeli Badge") [![Build Status](https://drone.io/github.com/Unknwon/goconfig/status.png)](https://drone.io/github.com/Unknwon/goconfig/latest) [![Go Walker](http://gowalker.org/api/v1/badge)](http://gowalker.org/github.com/Unknwon/goconfig) 
+goconfig [![Build Status](https://drone.io/github.com/Unknwon/goconfig/status.png)](https://drone.io/github.com/Unknwon/goconfig/latest) [![Go Walker](http://gowalker.org/api/v1/badge)](http://gowalker.org/github.com/Unknwon/goconfig) 
 ========
 
 本库已被 [《Go名库讲解》](https://github.com/Unknwon/go-rock-libraries-showcases/tree/master/lectures/01-goconfig) 收录讲解，欢迎前往学习如何使用！
 
+编码规范：基于 [Go 编码规范](https://github.com/Unknwon/go-code-convention)
+
 ## 关于
 
-goconfig 是一个易于使用，支持注释的 Go 语言配置文件解析器，该文件的书写格式和 Windows 下的 INI 文件一样。
+包 goconfig 是一个易于使用，支持注释的 Go 语言配置文件解析器，该文件的书写格式和 Windows 下的 INI 文件一样。
 
 配置文件由形为 `[section]` 的节构成，内部使用 `name:value` 或 `name=value` 这样的键值对；每行开头和尾部的空白符号都将被忽略；如果未指定任何节，则会默认放入名为 `DEFAULT` 的节当中；可以使用 “;” 或 “#” 来作为注释的开头，并可以放置于任意的单独一行中。
 	
@@ -89,3 +91,7 @@ goconfig 是一个易于使用，支持注释的 Go 语言配置文件解析器�
 - [goconf](http://code.google.com/p/goconf/)
 - [robfig/config](https://github.com/robfig/config)
 - [Delete an item from a slice](https://groups.google.com/forum/?fromgroups=#!topic/golang-nuts/lYz8ftASMQ0)
+
+## 授权许可
+
+本项目采用 Apache v2 开源授权许可证，完整的授权说明已放置在 [LICENSE](LICENSE) 文件中。
